@@ -1,0 +1,4 @@
+com\student\studentData\StudentDataApplication.class
+com\student\impl\StudentScoreUpdate.class
+com\student\studentData\Database.class
+com\student\studentData\StudentDataApplication$1.class

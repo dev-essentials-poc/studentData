@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StudentScoreUpdate.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">studentData</a> &gt; <a href="index.source.html" class="el_package">com.student.impl</a> &gt; <span class="el_source">StudentScoreUpdate.java</span></div><h1>StudentScoreUpdate.java</h1><pre class="source lang-java linenums">package com.student.impl;
+
+import com.student.studentData.Database;
+
+public class StudentScoreUpdate {
+
+	private Database database;
+	
+<span class="fc" id="L9">	public StudentScoreUpdate(Database database) {</span>
+<span class="fc" id="L10">		this.database=database;</span>
+<span class="fc" id="L11">	}</span>
+	
+	public void calculateSumAndScore(String studentId, int score[]) {
+<span class="fc" id="L14">		int  total=0;</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">		for(int marks:score) {</span>
+<span class="fc" id="L16">			total+=marks;</span>
+		}
+<span class="fc" id="L18">		database.updateScores(studentId, total);</span>
+<span class="fc" id="L19">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
